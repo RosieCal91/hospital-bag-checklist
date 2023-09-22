@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdfd; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the container */
+    background-color: #fff; /* White container background */
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+}
+
+/* Subheading styles */
+h2 {
+    background-color: #00a0e4; /* Baby blue for subheadings */
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Form and checklist styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px;
+}
+
+form .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form input[type="text"] {
+    flex-grow: 1; /* Allow the input to grow and take available space */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5; /* Light gray input background */
+}
+
+form button[type="submit"] {
+    padding: 10px;
+    width: 80px; /* Adjust the width as needed */
+    background-color: #00a0e4; /* Baby blue for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px; /* Add margin to separate button from list */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto; /* Center the list items horizontally */
+    max-width: 70%; /* Limit the width of the list */
+}
+
+li {
+    background-color: #f5f5f5; /* Light gray list item background */
+    margin: 10px auto; /* Center the list items horizontally */
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for list items */
+}
+
+/* Custom checkbox styles */
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00a0e4; /* Baby blue border for checkboxes */
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2713'; /* Checkmark symbol */
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00a0e4; /* Baby blue color for the checkmark */
+}
+
+.delete-btn {
+    background-color: #ff3333; /* Red color for delete button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+    background-color: #ff0000; /* Darker red on hover */
+}
+
+
+
